@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0d0a1a;
+  --bg-secondary: #120f23;
+  --bg-card: #1a1530;
+  --bg-card-hover: #221d3d;
+
+  --text-primary: #ffffff;
+  --text-secondary: #d1c9e8;
+  --text-muted: #9488b4;
+
+  --border-color: rgba(45, 30, 63, 1);
+
+  --glass-border: hsl(280, 90%, 65%);
+}
+
+.light {
+  --bg-primary: #f8f6fc;
+  --bg-secondary: #f1edf8;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f4f1fb;
+
+  --text-primary: #180f2e;
+  --text-secondary: #423a58;
+  --text-muted: #6c6485;
+
+  --border-color: rgba(210, 195, 235, 1);
+
+  --glass-border: hsl(280, 70%, 55%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  font-family: var(--font-poppins), sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit), sans-serif;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+::selection {
+  background: hsl(280, 90%, 65%);
+  color: #fff;
+}
+
+/* Hide scrollbar but keep scrolling */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(280, 90%, 65%) transparent;
+}
+
+.glass-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--glass-border);
+}
+
+.glow-shadow {
+  box-shadow: 0 0 20px hsla(280, 90%, 65%, 0.25), 0 0 45px hsla(280, 90%, 65%, 0.12),
+    0 0 80px hsla(280, 90%, 65%, 0.06), 0 8px 32px rgba(13, 10, 26, 0.35);
+}
+
+.text-gradient {
+  background-image: linear-gradient(135deg, hsl(280, 90%, 65%), hsl(320, 88%, 60%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1260px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Prose overrides for blog content rendered via @tailwindcss/typography */
+.prose-portfolio {
+  --tw-prose-body: var(--text-secondary);
+  --tw-prose-headings: var(--text-primary);
+  --tw-prose-links: hsl(280, 90%, 65%);
+  --tw-prose-bold: var(--text-primary);
+  --tw-prose-quotes: var(--text-primary);
+  --tw-prose-quote-borders: hsl(280, 90%, 65%);
+  --tw-prose-code: var(--text-primary);
+  --tw-prose-hr: var(--border-color);
+}
