@@ -86,8 +86,8 @@ export function Hero() {
           >
             <Linkedin size={20} />
           </a>
-          
-          href={siteConfig.social.fiverr}
+          <a
+            href={siteConfig.social.fiverr}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Fiverr Profile"
