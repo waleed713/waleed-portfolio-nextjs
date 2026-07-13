@@ -21,7 +21,7 @@ export const siteConfig = {
   social: {
     github: "https://github.com/waleed713",
     linkedin: "https://www.linkedin.com/in/waleed-ahmad-b95665268/",
-    fiverr: "https://www.fiverr.com/https://www.fiverr.com/waleed_dev7/",
+    fiverr: "https://www.fiverr.com/https:/www.fiverr.com/waleed_dev7",
     whatsapp:
       "https://wa.me/923215459190?text=Hi%20Waleed!%20I%20would%20like%20to%20know%20more%20about%20your%20services.",
   },
