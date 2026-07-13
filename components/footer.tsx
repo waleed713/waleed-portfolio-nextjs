@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Store } from "lucide-react";
 import { siteConfig } from "@/lib/site.config";
 
 function WhatsappIcon({ size = 18 }: { size?: number }) {
@@ -37,6 +37,15 @@ export function Footer() {
             className="flex h-10 w-10 items-center justify-center rounded-lg border border-border-glass bg-bg-card text-text-primary transition-all hover:-translate-y-1 hover:glow-shadow"
           >
             <Linkedin size={18} />
+          </a>
+          <a
+            href={siteConfig.social.fiverr}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Fiverr Profile"
+            className="flex h-10 w-10 items-center justify-center rounded-lg border border-border-glass bg-bg-card text-text-primary transition-all hover:-translate-y-1 hover:glow-shadow"
+          >
+            <Store size={18} />
           </a>
           <a
             href={siteConfig.social.whatsapp}
