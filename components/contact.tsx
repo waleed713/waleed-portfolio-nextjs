@@ -83,6 +83,14 @@ export function Contact() {
               <Linkedin size={18} /> LinkedIn
             </a>
             <a
+              href={siteConfig.social.fiverr}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card flex flex-1 items-center justify-center gap-2 rounded-xl border p-4 text-text-primary transition-all hover:-translate-y-1 hover:glow-shadow"
+            >
+              <Store size={18} /> Fiverr
+            </a>
+            <a
               href={siteConfig.social.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
