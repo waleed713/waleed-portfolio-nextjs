@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { Mail, Github, Linkedin, User, Briefcase, MessageSquare, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { Mail, Github, Linkedin, User, Briefcase, MessageSquare, Send, CheckCircle2, AlertCircle, Store } from "lucide-react";
 import { siteConfig, contactServices } from "@/lib/site.config";
 import { AnimatedSection } from "@/components/animated-section";
 
